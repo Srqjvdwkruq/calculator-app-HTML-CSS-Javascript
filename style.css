@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #F2EFE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#display {
+    width: 480px;
+    height: 100px;
+    background-color: #fff;
+    color: #979797;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #F5F5F5;
+    width: 480px;
+    height: 100%;
+    border-radius: 12px;
+    padding: 30px;
+    gap: 20px;
+}
+
+button {
+    width: 89px;
+    height: 56px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #979797;
+    box-shadow: 0 4px 0 #E4E0E1;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.delete {
+    background-color: #AFDDFF;
+    box-shadow: 0 4px 0 #6CB2E6;
+    color: #4483B2;
+}
+
+button.reset {
+    background-color: #AFDDFF;
+    box-shadow: 0 4px 0 #6CB2E6;
+    color: #4483B2;
+    width: 200px;
+    grid-column: span 2;
+}
+
+button.equal {
+    background-color: #FCB454;
+    box-shadow: 0 4px 0 #EE9D32;
+    color: #C98E40;
+    width: 200px;
+    grid-column: span 2;
+}
